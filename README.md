@@ -7,22 +7,15 @@ This project uses asynchronous web app used to update the ui dynamically
 ## Instructions
 
 To run this project follow the following steps :-
+4. And another item.
 
-1- open the project on your editor (VScode , atom , ... )
-2- open the terminal in the project main root  
-3- to initialise the project use
+⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 
-⋅⋅* npm init
-4- install node modules
-⋅⋅* using npm i || npm install  
-5- install express
-⋅⋅* npm i express || npm install express
-6- this project also required to use two packages :-
-  ⋅⋅* body-parser - npm i body-parse
-  ⋅⋅* cors
-  ⋅⋅* npm i cors  
-7- to run local server (npm start or node server.js )
-8- go to your browser and write (localhos:youre specified port in server.js file)
+⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+
+
 
 ## Extras
 
