@@ -15,12 +15,13 @@ To run this project follow the following steps :-
 - using npm i || npm install  
 - install express  
   - npm i express || npm install express
-- this project also required to use two packages :-
-  - body-parser - npm i body-parse
+- this project also required to use two packages
+  - body-parser 
+    - npm i body-parse
   - cors
-  - npm i cors  
+    - npm i cors  
 - to run local server (npm start or node server.js )
-- go to your browser and write (localhos:youre specified port in server.js file)
+- go to your browser and write (localhost:your specified port in server.js file) for example (localhost:3000) 
 
 
 
