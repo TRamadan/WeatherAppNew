@@ -17,7 +17,7 @@ To run this project follow the following steps :-
   - npm i express || npm install express
 - this project also required to use two packages
   - body-parser 
-    - npm i body-parse
+    - npm i body-parser
   - cors
     - npm i cors  
 - to run local server (npm start or node server.js )
