@@ -1,5 +1,5 @@
 /* Global Variables */
-const key = "&appid=661daa7377189bfe425b6af1f07ac279&units=imperial";
+const key = "661daa7377189bfe425b6af1f07ac279&units=imperial";
 
 const APIUrl = "https://api.openweathermap.org/data/2.5/weather?zip=";
 
@@ -13,7 +13,6 @@ document.getElementById("generate").addEventListener("click", UserActioButton);
 function UserActioButton(e) {
   const postCode = document.getElementById("zip").value;
   const feelings = document.getElementById("feelings").value;
-  console.log(currentNewDate);
   GetFetchedTemprature(APIUrl, postCode, key).then(function (data) {
     // Add data to POST request
     AddData("http://localhost:3000/addWeatherData", {
@@ -32,12 +31,11 @@ function UserActioButton(e) {
 const GetFetchedTemprature = async (APIUrl, code, key) => {
   // const getTemperatureDemo = async (url)=>{
   const response = await fetch(APIUrl + code + "&APPID=" + key);
-  console.log(response);
   try {
     const fetchedData = await response.json();
     return fetchedData;
   } catch (err) {
-    console.log("Fetch temprature function error", err);
+    alert("There is an error in getting temprature");
   }
 };
 
@@ -55,7 +53,7 @@ const AddData = async (url = "", data = {}) => {
     const SentData = await postRequest.json();
     return SendData;
   } catch (err) {
-    console.log("Send Data function error", err);
+    alert("There is an error in sending data , try again later");
   }
 };
 
@@ -71,6 +69,6 @@ const UpdateUserGui = async () => {
     document.getElementById("temp").innerHTML = UserGuiData.temperature;
     document.getElementById("content").innerHTML = UserGuiData.user_response;
   } catch (err) {
-    console.log("Update ui function error", err);
+    alert("Can not update user view , try again");
   }
 };
