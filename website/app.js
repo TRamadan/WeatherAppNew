@@ -35,7 +35,7 @@ const GetFetchedTemprature = async (APIUrl, code, key) => {
     const fetchedData = await response.json();
     return fetchedData;
   } catch (err) {
-    alert("There is an error in getting temprature");
+    console.log("Fetch temprature function error", err);
   }
 };
 
@@ -50,10 +50,10 @@ const AddData = async (url = "", data = {}) => {
     body: JSON.stringify(data),
   });
   try {
-    const SentData = await postRequest.json();
+    const SendData = JSON.parse(await postRequest.json());
     return SendData;
   } catch (err) {
-    alert("There is an error in sending data , try again later");
+    console.log("Send Data function error", err);
   }
 };
 
@@ -69,6 +69,6 @@ const UpdateUserGui = async () => {
     document.getElementById("temp").innerHTML = UserGuiData.temperature;
     document.getElementById("content").innerHTML = UserGuiData.user_response;
   } catch (err) {
-    alert("Can not update user view , try again");
+    console.log("Update ui function error", err);
   }
 };

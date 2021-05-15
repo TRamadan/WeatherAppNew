@@ -7,7 +7,7 @@
 
 ## Instructions
 
-To run this project follow the following steps :-
+Follow these steps to operate the project :-
 
 - open the project on your editor (VScode , atom , ... )
 - open the terminal in the project main root
@@ -27,4 +27,4 @@ To run this project follow the following steps :-
 
 ## Extras
 
-You may change the functions to be implemented using Axios
+You may change the functions to be implemented using Axios or be a contributer to make a unit testing
