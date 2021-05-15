@@ -3,10 +3,9 @@
 - This is the second project for frontend professional web development track.
 - Languages used for this project :-
   - Html , CSS , vanila JS.
+- This project also is a useful training to be a professional in using javascript.
 
 ## Instructions
-
-This project aims to make a dynamically asychronous web app
 
 To run this project follow the following steps :-
 
@@ -24,4 +23,8 @@ To run this project follow the following steps :-
   - cors
     - npm i cors
 - to run local server (npm start or node server.js )
-- go to your browser and write (localhost:your specified port in server.js file) for example (localhost:3000)
+- go to your browser and write (localhost:your specified port in server.js file) for example (localhost:3000).
+
+## Extras
+
+You may change the functions to be implemented using Axios

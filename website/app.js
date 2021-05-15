@@ -1,5 +1,5 @@
 /* Global Variables */
-const key = "661daa7377189bfe425b6af1f07ac279";
+const key = "&appid=661daa7377189bfe425b6af1f07ac279&units=imperial";
 
 const APIUrl = "https://api.openweathermap.org/data/2.5/weather?zip=";
 
