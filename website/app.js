@@ -14,9 +14,9 @@ function UserActioButton(e) {
   const postCode = document.getElementById("zip").value;
   const feelings = document.getElementById("feelings").value;
   console.log(currentNewDate);
-  getTemperature(APIUrl, postCode, key).then(function (data) {
+  GetFetchedTemprature(APIUrl, postCode, key).then(function (data) {
     // Add data to POST request
-    postData("http://localhost:3000/addWeatherData", {
+    AddData("http://localhost:3000/addWeatherData", {
       temperature: data.main.temp,
       date: currentNewDate,
       user_response: feelings,
