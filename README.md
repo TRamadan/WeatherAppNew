@@ -1,5 +1,9 @@
 # Weather-Journal App Project
 
+- This is the second project for frontend professional web development track.
+- Languages used for this project :-
+  - Html , CSS , vanila JS.
+
 ## Instructions
 
 This project aims to make a dynamically asychronous web app
